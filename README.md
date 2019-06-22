@@ -63,7 +63,7 @@ train.py --restore_step *
 ```
 
 # WIP  
-- [ ] combined with the mandarin frontend [MTTS](https://github.com/Jackiexiao/MTTS)
+- [ ] combined with [MTTS](https://github.com/Jackiexiao/MTTS), the Mandarin frontend
 - [ ] batch inference for synthesis speedup
 - [ ] scheduled sampling   
 - [ ] model pruning
