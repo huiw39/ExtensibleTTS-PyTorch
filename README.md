@@ -20,7 +20,7 @@ An extensible speech synthesis system, build with PyTorch and the original code 
 
 1. **Download a dataset**    
 
-   [cmu_slt_arctic](http://104.131.174.95/slt_arctic_full_data.zip).
+   [cmu_slt_arctic](http://104.131.174.95/slt_arctic_full_data.zip)
 
 2. **Unpack the dataset into `~/ExtensibleTTS-PyTorch/datasets`**    
 
@@ -63,10 +63,10 @@ train.py --restore_step *
 ```
 
 # WIP  
-- [ ] combined with [MTTS](https://github.com/Jackiexiao/MTTS) mandarin frontend.   
-- [ ] batch inference for synthesis speedup.    
-- [ ] scheduled sampling.    
-- [ ] model pruning. 
+- [ ] combined with the mandarin frontend [MTTS](https://github.com/Jackiexiao/MTTS)
+- [ ] batch inference for synthesis speedup
+- [ ] scheduled sampling   
+- [ ] model pruning
 
 # Reference       
 - [nnmnkwii_gallery](https://github.com/r9y9/nnmnkwii_gallery)    
