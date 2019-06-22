@@ -20,7 +20,7 @@ An extensible speech synthesis system, build with PyTorch and the original code 
 
 1. **Download a dataset**    
 
-[cmu_slt_arctic](http://104.131.174.95/slt_arctic_full_data.zip).
+   [cmu_slt_arctic](http://104.131.174.95/slt_arctic_full_data.zip).
 
 2. **Unpack the dataset into `~/ExtensibleTTS-PyTorch/datasets`**    
 
@@ -46,8 +46,9 @@ python preprocess.py
 ```
 python norm_params.py
 ```
-3. **Train a model**
-```python train.py --train_model duration
+3. **Train a model**     
+```
+python train.py --train_model duration
 ``` 
   * Use `--train_model acoustic` for training a acoustic model
   
