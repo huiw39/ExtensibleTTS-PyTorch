@@ -1,0 +1,8 @@
+pytorch
+pyworld
+pysptk
+scipy
+numpy
+tqdm
+pickle
+nnmnkwii
