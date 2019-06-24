@@ -1,5 +1,5 @@
 # ExtensibleTTS-PyTorch
-An extensible speech synthesis system, build with PyTorch and the original code is from r9y9's https://github.com/r9y9/nnmnkwii_gallery . You will find it easy to train acoustic model by employing popular models such as tacotron'encoder, deepvoice'encoder, transformer'encoder and any other you created.
+An extensible speech synthesis system, build with PyTorch and the original code is from r9y9's https://github.com/r9y9/nnmnkwii_gallery . You will find it easy to train acoustic model by employing popular models such as tacotron's encoder, deepvoice's encoder, transformer's encoder and any other you created.
 
 ## Quick Start
 
