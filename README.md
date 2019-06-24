@@ -1,15 +1,15 @@
 # ExtensibleTTS-PyTorch
-An extensible speech synthesis system, build with PyTorch and the original code is from r9y9's https://github.com/r9y9/nnmnkwii_gallery
+An extensible speech synthesis system, build with PyTorch and the original code is from r9y9's https://github.com/r9y9/nnmnkwii_gallery and You will find it easy to train you acoustic model by employing tacotron'encoder, deepvoice'encoder, transformer'encoder etc..
 
 ## Quick Start
 
 ### Dependencies  
 - python 3.6   
-- CUDA 9.0
-- pytorch     
-- nnmnkwii   
-- pyworld    
-- pysptk    
+- [CUDA 9.0](https://developer.nvidia.com/cuda-toolkit-archive)
+- [pytorch](https://pytorch.org/)    
+- [nnmnkwii](https://github.com/r9y9/nnmnkwii)   
+- [pyworld](https://github.com/JeremyCCHsu/Python-Wrapper-for-World-Vocoder)    
+- [pysptk](https://github.com/r9y9/pysptk)    
 - scipy    
 - numpy    
 - pickle
@@ -32,6 +32,7 @@ An extensible speech synthesis system, build with PyTorch and the original code 
              |- label_phone_align
              |- label_state_align
              |- wav
+             |- file_id_list_full.scp
              |- questions-radio_dnn_416.hed
    ```
 
@@ -39,8 +40,9 @@ An extensible speech synthesis system, build with PyTorch and the original code 
 
 1. **Preprocess the data to extract linguistic/duration/acoustic feature**
 ```
-python preprocess.py
+python preprocess.py --label state_align
 ```
+  * Use `--label phone_align` 
 
 2. **Count min/max/mean/var/scale value of the data for input/output feature normalization**
 ```
@@ -48,18 +50,18 @@ python norm_params.py
 ```
 3. **Train a model**     
 ```
-python train.py --train_model duration
+python train_dnn.py --train_model duration
 ``` 
   * Use `--train_model acoustic` for training a acoustic model
   
 4. **Label to speech waveform from a duration/acoustic checkpoint**
 ```
-synthesis.py --duration_checkpint * --acoustic_checkpint *
-```   
+python synthesis.py --label state_align --duration_checkpint * --acoustic_checkpint *
+``` 
 
 5. **Restore from a checkpoint**
 ```
-train.py --restore_step *
+python train.py --restore_step *
 ```
 
 # WIP  
